@@ -14,8 +14,6 @@ Features Handles rate limiting and exponential backoff subject to maximum retrie
 
 Handles paging of results. Returns all historical results for a given query by default.
 
-Optionally handles incorporation of praw to fetch objects after getting ids from pushshift If not using praw, returns results in comment and submission objects whose API is similar to the corresponding praw objects. Additionally, result objects have an additional .d_ attribute that offers dict access to the associated data attributes.
-
 Optionally adds a created attribute which converts a comment/submission’s created_utc timestamp to the user’s local time. (may raise exceptions for users with certain timezone settings).
 
 Simple interface to pass query arguments to the API. The API is sparsely documented, so it’s often fruitful to just try an argument and see if it works.
@@ -25,3 +23,7 @@ A stop_condition argument to make it simple to stop yielding results given arbit
 # Purpose
 
 The purpose of this aquire and analyze is to aquire two sets of text from comment sections, one coming from the Subreddit r/Gaming searching for keyword IGN and the other coming from r/IGN searching for keyword gaming. This invers of search was the bases for our analysis to see what patterns of text will be found.
+
+# Results and Conclusions
+
+Overall the data that we got out of this aquire was large, but we did not get full analysis on it. We did not do the sentiment analysis or deeper lexicon comparisons that we wanted between the two sets of text. Between Matt and I working on the Aquire and Marcus helping with the Analyze, we found some differences and basic conclusions between the text as in differences in word as well as different dependency formats when looking at the graphs as well as different entity names when looking at the visualizations. In the future I would like to use this dataset further for either my capstone or for personal use. We are disapointed that the analysis isn't deeper, but some analysis is there.
