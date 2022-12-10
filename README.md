@@ -4,7 +4,7 @@ Will, Matt, Marcus
 
 # Description 
 
-A minimalist wrapper for searching public reddit comments/submissions via the pushshift.io API.
+The api is a minimalist wrapper for searching public reddit comments/submissions via the pushshift.io API.
 
 Pushshift is an extremely useful resource, but the API is poorly documented. As such, this API wrapper is currently designed to make it easy to pass pretty much any search parameter the user wants to try.
 
